@@ -1,19 +1,22 @@
- //variables
- const modal = document.querySelector(".modal")
-       btn = document.querySelector(".btn")
-       close  = document.querySelector(".close")
+const btn = document.querySelector(".btn");
+const result = document.querySelector(".result");
 
-       btn.addEventListener('click' , openModal);
-       close.addEventListener('click' , closeModal);
-       modal.addEventListener('click' , closeModal);
+btn.addEventListener("click", palindrome);
 
-       //open modal
-       function openModal(e) {
-        e.preventDefault();
-        modal.style.display = "block";
-       }
 
-       //close modal
-       function closeModal() {
-        modal.style.display = "none"
-       }
+      //madam
+      //noon
+ 
+      function palindrome(){
+            const word = document.querySelector(".input-text").value;
+            let len = word.length;
+
+            let start = word.substring(0, math.floor(len / 2)).
+            toLowerCase();
+            let end = word.substring(len - math.floor(len / 2)).
+            toLowerCase();
+
+
+
+           alert(end);
+      }
